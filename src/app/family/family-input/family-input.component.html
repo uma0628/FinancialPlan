@@ -1,3 +1,10 @@
-<p>
-  family-input works!
-</p>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <input type="text" name="name" ngModel required placeholder="氏名">
+  <select name="relationship" ngModel required placeholder="続柄">
+    <option *ngFor="let relationship of relationships" value="{{relationship.key}}">
+      {{relationship.value}}
+    </option>
+  </select>
+  <input type="date" name="birthday" ngModel required placeholder="生年月日">
+  <button type="submit" [disabled]="!f.form.valid">登録</button>
+</form>

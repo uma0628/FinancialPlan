@@ -1,3 +1,10 @@
-<p>
-  family-update works!
-</p>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <input type="text" name="name" [(ngModel)]=name required placeholder="氏名">
+  <select name="relationship" [(ngModel)]=relationship required placeholder="続柄">
+    <option *ngFor="let relationship of relationships" value="{{relationship.key}}">
+      {{relationship.value}}
+    </option>
+  </select>
+  <input type="date" name="birthday" [ngModel]=birthdayFormat required placeholder="生年月日">
+  <button type="submit" [disabled]="!f.form.valid">更新</button>
+</form>
