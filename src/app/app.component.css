@@ -4,16 +4,16 @@ ul {
 	justify-content: center;
 	align-items: center;
 	border-bottom: 3px solid #EB3381
-  }
+}
   
-  li {
+li {
 	list-style: none;
 	width: 180px;
 	border-right: 5px solid #FFFFFF;
 	background: #F2F2F2
-  }
+}
   
-  a {
+a {
 	display: block;
 	padding: 10px 15px;
 	height: 50px;
@@ -21,21 +21,21 @@ ul {
 	text-align: center;
 	text-decoration: none;
 	color: #2E2E2E;
-  }
+}
   
-  .active-link {
+.active-link {
 	/* background: #EB8F33; */
 	background: #EB3381;
 	color: #FFFFFF;
-  }
+}
   
-  @media screen and (max-width: 680px) {
+@media screen and (max-width: 680px) {
 	a {
 	  font-size: 0.5rem;
 	}
-  }
+}
   
-  .content {
+.content {
 	max-width:800px;
 	margin: 0 auto;
-  }
+}
