@@ -1,0 +1,12 @@
+<div *ngFor="let event of events">
+  <app-life-event-detail
+    [uuid]='event.uuid'
+    [year]='event.year'
+    [familyPerson]='event.familyPerson'
+    [eventName]='event.eventName'
+    [money]='event.money'
+    [timestamp]='event.timestamp'
+    [family]='family'
+  >
+  </app-life-event-detail>
+</div>

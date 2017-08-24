@@ -1,0 +1,11 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <input type="hidden" [(ngModel)]="uuid" name="uuid">
+  <select name="family-person" id="" [(ngModel)]="familyPerson" name="familyPerson" required>
+    <option value="" disabled>お名前（続柄）</option>
+    <option *ngFor="let person of family" [ngValue]="person">{{person.name}}さん（{{person.relationship | relationshipValue}}）</option>
+  </select>
+  <input type="number" placeholder="年次" [(ngModel)]="year" name="year" required>
+  <input type="text" placeholder="イベント" [(ngModel)]="eventName" name="eventName" required>
+  <input type="number" placeholder="金額" [(ngModel)]="money" name="money" required><span>万円</span>
+  <button type="submit" [disabled]="!f.form.valid">更新</button>
+</form>

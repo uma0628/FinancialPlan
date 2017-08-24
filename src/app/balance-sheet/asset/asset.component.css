@@ -3,7 +3,7 @@
 	border: solid 1px #8E969B;
   }
   .heading {
-	font-size: 14px;
+	font-size: 1.1rem;
 	padding: 10px;
 	border-radius: 0;
 	background-color: #7DADD2;
@@ -19,7 +19,7 @@
   }
   
   .title {
-	font-size: 14px;
+	font-size: .9rem;
 	border-right: solid 1px #8E969B;
 	padding-left: 10px;
 	border-radius: 0;

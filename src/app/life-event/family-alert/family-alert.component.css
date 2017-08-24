@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E083AA;
+}
+
+a {
+    margin: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    background: #EB3381;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}

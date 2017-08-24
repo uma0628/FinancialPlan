@@ -1,0 +1,18 @@
+<div [hidden]="myVar" (click)="onClick()">
+	<span class="year">{{year}}</span>
+	<span class="name">{{familyPerson.name}}（{{familyPerson.relationship | relationshipValue}}）</span>
+	<span class="age">{{ageOfYear(familyPerson.birthday)}}</span>
+	<span class="event">{{eventName}}</span>
+	<span class="money">{{money}}万円</span>		
+</div>
+<app-life-event-update [hidden]="!myVar"
+	[family]='family'
+	[uuid]='uuid'
+	[year]='year'
+	[familyPerson]='familyPerson'
+	[eventName]='eventName'
+	[money]='money'
+	[timestamp]='timestamp'
+	(submitLifeEvent)="onLifeEventChange()"
+>
+</app-life-event-update>

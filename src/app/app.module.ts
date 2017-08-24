@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FamilyService } from './shared/services/family/family.service';
 import { IncomeService } from './shared/services/income/income.service';
 import { ExpenseService } from './shared/services/expense/expense.service';
+import { LifeEventService } from './shared/services/life-event/life-event.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ExpenseService } from './shared/services/expense/expense.service';
     {provide: LOCALE_ID, useValue: 'ja-JP'},
     FamilyService,
     IncomeService,
-    ExpenseService
+    ExpenseService,
+    LifeEventService
   ],
   bootstrap: [AppComponent]
 })
