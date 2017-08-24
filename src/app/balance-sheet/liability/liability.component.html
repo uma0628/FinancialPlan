@@ -1,0 +1,21 @@
+<div class="liability">
+  <div class="box">
+    <div class="heading">負債</div>
+    <div class="row" *ngFor="let liability of liabilities">
+      <div class="title">
+        {{liability.title}}
+      </div>
+      <div>
+        <input type="number" class="money" min="0" [(ngModel)]="liability.money" (click)="$event.target.select()">
+        <span class="monetaryUnit">{{liability.monetaryUnit}}</span>
+      </div>
+    </div>
+  </div>
+  <app-total
+    [symbol]="'B'"
+    [caption]="'負債'"
+    [total]='calcLiabilityTotal()'
+    [unit]="'万円'"
+  >
+  </app-total>
+</div>

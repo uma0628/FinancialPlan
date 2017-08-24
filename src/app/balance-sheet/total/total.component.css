@@ -1,0 +1,45 @@
+.footer-box {
+	margin-top: 30px;
+	display: inline-flex;
+	align-items: center;
+	padding-left: 15px;
+  }
+  
+  
+  .footer-symbol {
+	background-color: #EB3381;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0px;
+	margin-right: 10px;
+	font-weight: bold;
+  }
+  
+  .footer-caption {
+	font-size: 19px;
+  }
+  
+  .footer-total-box {
+	height: 3.5rem;
+	width: 11rem;
+	background-color: beige;
+	border: solid 3px #EB3381;
+	margin-left: 25px;
+	position: relative;
+	font-weight: bold;
+  }
+  .footer-total-money {
+	bottom: 1rem;
+	position: absolute;
+	right: 50px;
+  }
+  .footer-total-monetaryUnit {
+	position: absolute;
+	bottom: 0px;
+	right: 3px;
+  }
