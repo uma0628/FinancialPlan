@@ -1,9 +1,11 @@
 <div [hidden]="myVar" (click)="onClick()">
-	<span class="year">{{year}}</span>
-	<span class="name">{{familyPerson.name}}（{{familyPerson.relationship | relationshipValue}}）</span>
-	<span class="age">{{ageOfYear(familyPerson.birthday)}}</span>
-	<span class="event">{{eventName}}</span>
-	<span class="money">{{money}}万円</span>		
+	<div class="detailRow">
+		<span class="year">{{year}}</span>
+		<span class="name">{{familyPerson.name}}（{{familyPerson.relationship | relationshipValue}}）</span>
+		<span class="age">{{ageOfYear(familyPerson.birthday)}}</span>
+		<span class="event">{{eventName}}</span>
+		<span class="money">{{money}}万円</span>	
+	</div>	
 </div>
 <app-life-event-update [hidden]="!myVar"
 	[family]='family'

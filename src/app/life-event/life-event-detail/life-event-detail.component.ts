@@ -60,7 +60,8 @@ export class LifeEventDetailComponent implements OnInit {
    */
   ageOfYear(year: Date): number {
     let birthday: Birthday = new Birthday(year);
-    return birthday.ageOfYear();
+    // 年次に対応した年齢表示
+    return birthday.ageOfYear() + this.year - new Date().getFullYear();
   }
 
   /**

@@ -36,6 +36,12 @@ export class LifeEventInputComponent implements OnInit {
    * @param form 
    */
   onSubmit(form: NgForm): void {
+    // 過去のライフイベントの場合
+    if (form.value.year < new Date().getFullYear()) {
+      alert('過去のライフイベントは指定できません。');
+      return;
+    }
+
     const newEvent = {
       uuid: UUID.v4(),
       year: form.value.year,

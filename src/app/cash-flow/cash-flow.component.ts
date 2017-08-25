@@ -7,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CashFlowComponent implements OnInit {
 
+  /**
+   * コンストラクタ
+   */
   constructor() { }
 
+  /**
+   * 初期処理
+   */
   ngOnInit() {
   }
 

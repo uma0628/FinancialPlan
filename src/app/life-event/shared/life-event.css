@@ -1,6 +1,7 @@
 header {
     display: inline-block;
     border-bottom: solid 1px #dddddd;
+    background-color: #7dadd2;
     font-weight: bold;
     width: 100%;
 }
@@ -41,4 +42,11 @@ ul{
 .money {
     width: 10%;
     text-align: right;
+}
+
+.detailRow {
+    display: flex;
+    align-items: center;
+	border-bottom: solid 1px #ddd;
+    height: 50px;
 }

@@ -15,15 +15,20 @@
 	float: left;
 	margin-left: 50px;
   }
-  
+	
+	.stockholders-equity-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
   .stockholders-equity-box {
-	margin-top: 30px;
-	display: inline-flex;
-	align-items: center;
-	padding-left: 15px;
-	background-color: #EB3381;
-	font-size: 19px;
-	font-weight: bold;
+		display: inline-flex; 
+		align-items: center;
+		padding-left: 15px;
+		background-color: #EB3381;
+		font-size: 19px;
+		font-weight: bold;
   }
   
   .stockholders-equity-box p {

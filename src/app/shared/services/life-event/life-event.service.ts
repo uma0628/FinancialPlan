@@ -35,7 +35,8 @@ export class LifeEventService {
       return e.uuid === event.uuid;
     });
 
-    if (index) {
+    // 数値の0はfalse！
+    if (index == null) {} else {
       this.events[index] = event;
     }
 
